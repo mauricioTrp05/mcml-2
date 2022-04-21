@@ -1,0 +1,105 @@
+header.msthd{
+  background-color: #343a40;
+  padding-top: -8rem;
+  padding-bottom: -8rem;
+}
+button.btnserviciomodal{
+  margin-top: 2em;
+}
+.map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+.INS{
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.INS.active{
+  opacity: 1;
+}
+.TNI{
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.TNI.active{
+  opacity: 1;
+}
+.TND{
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.TND.active{
+  opacity: 1;
+}
+.rating{
+  color: yellow;
+}
+.rating-slide::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background: url('../assets/input-range/input-range-01.svg');
+  cursor: pointer;
+}
+
+.rating-slide::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border: 0;
+  background-image: url('../assets/input-range/input-range-01.svg');
+  cursor: pointer;
+}
+
+.container-carousel{
+  position: relative;
+  overflow: hidden;
+}
+.container-carousel .img-carousel{
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* [1] The container */
+.img-hover-zoom {
+  position: relative;
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+.img-hover-zoom p{
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+  text-shadow: 3px 3px 5px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.2);
+  outline: 1px solid white;
+  outline-offset: -40px;
+}
