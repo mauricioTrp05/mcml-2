@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //routes
-app.use(require('./src/routes/index'));
+app.use(require('./routes/index'));
 
 
 //static files
