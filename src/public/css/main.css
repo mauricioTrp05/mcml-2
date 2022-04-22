@@ -1,3 +1,7 @@
+.titulo{
+  font-family: 'Libre Bodoni', serif;
+}
+
 header.msthd{
   background-color: #343a40;
   padding-top: -8rem;
@@ -71,7 +75,28 @@ button.btnserviciomodal{
 .container-carousel .img-carousel{
   width: 25%;
   position: absolute;
-  top: 50%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.container-carousel h1{
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+  text-shadow: 3px 3px 5px black;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.container-carousel h5{
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  text-shadow: 3px 3px 5px black;
+  position: absolute;
+  top: 60%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
@@ -102,4 +127,13 @@ button.btnserviciomodal{
   transform: scale(1.2);
   outline: 1px solid white;
   outline-offset: -40px;
+}
+
+.img-equipo {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.img-equipo:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

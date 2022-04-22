@@ -6,20 +6,20 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 function reveal() {
-    var ins = document.querySelectorAll(".INS");
+    var bounce = document.querySelectorAll(".bounce");
     var tni = document.querySelectorAll(".TNI");
     var tnd = document.querySelectorAll(".TND");
   
-    for (var i = 0; i < ins.length; i++) {
+    for (var i = 0; i < bounce.length; i++) {
       var windowHeight = window.innerHeight;
-      var elementTop = ins[i].getBoundingClientRect().top;
+      var elementTop = bounce[i].getBoundingClientRect().top;
       var elementVisible = 150;
   
       if (elementTop < windowHeight - elementVisible) {
-        ins[i].classList.add("active","animate__animated","animate__bounce");
+        bounce[i].classList.add("active","animate__animated","animate__bounceIn");
         
       } else {
-        ins[i].classList.remove("active", "animate__animated","animate__bounce");    
+        bounce[i].classList.remove("active", "animate__animated","animate__bounceIn");    
       }
     }
 
